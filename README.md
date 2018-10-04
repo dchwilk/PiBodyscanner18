@@ -5,12 +5,10 @@ Die Raspberry Pi Kamera gehört zu den günstigsten Digitalkameras. Nahezu konku
 Dieses Projekt ist dabei teilweise inspiriert von folgendem Projekt:
 https://www.instructables.com/id/Multiple-Raspberry-PI-3D-Scanner/
 
-Dabei erstellen die Pis nur die Bilder welche seperat mittels SFM verarbeitet werden.
-
-Anders als vergleichbare Projekte abeitet dieses Projekt mit einer Hierarchisierung. Ein Master-Pi steuert n-viele Slave-Pis. So können getrennte Einheiten aufgebaut werden und ein Mesh von Scannern kann gemeinschaftlich Fotos erstellen. Jede Einheit lässt sich frei positionieren.
+In diesem erstellen die Pis nur die Bilder welche seperat mittels SFM verarbeitet werden. Anders als vergleichbare Projekte abeitet dieses Projekt mit einer Hierarchisierung. Ein Master-Pi steuert n-viele Slave-Pis. So können getrennte Einheiten aufgebaut werden und ein Mesh von Scannern kann gemeinschaftlich Fotos erstellen. Jede Einheit lässt sich frei positionieren.
 
 
-#Installation
+## Installation
 
 Für dieses Projekt wurde Raspian verwendet. Allerdings ist grundsätzlich jedes Raspbery-OS denkbar solange Python 2.7 und die Pi Kamera unterstützt werden.
 Des weiteren muss SSHFS installiert sein und auf jedem Pi der passende RSA-Key hinterlegt werden.
@@ -33,7 +31,7 @@ Zusammengefasst:
 5. Darauf achten, dass im Homeverzeichnes des Users ein Ordner "files" vorliegt (/home/pi/files)
 
 
-#Gebrauch
+## Gebrauch
 
 Alle Pis starten. Die Slaves warten bis ihr Master im Netzwerk ereichbar ist (eth0).
 "send.py" starten und einen Wunschnamen eingeben.
@@ -41,7 +39,7 @@ Fotos werden in /home/*USER*/files/images/*WUNSCHNAME* gespeichert.
 Bilder mittels FTP herunterladen.
 
 
-#Weitere Befehle
+## Weitere Befehle
 
 Folgende Befehle können über send.py als Foto-Name eingegeben werden:
 
