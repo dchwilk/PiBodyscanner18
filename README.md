@@ -43,7 +43,10 @@ Bilder mittels FTP herunterladen.
 
 Folgende Befehle können über send.py als Foto-Name eingegeben werden:
 
-reboot = Startet alle Pis neu
-poweroff = Fährt alle Pis herunter
-update = Kopiert alle Files aus dem Ordner /boot/update/ nach /home/pi/files/update/. Daraufhin kopieren alle Slaves diesen in ihr boot-Verzeichnis und starten neu.
-stop = Beendet das master_listen.py Skript und ermöglicht den direkten Zugriff auf den Master-Pi
+* reboot = Startet alle Pis neu
+
+* poweroff = Fährt alle Pis herunter
+
+* update = Kopiert alle Files aus dem Ordner /boot/update/ nach /home/pi/files/update/. Daraufhin kopieren alle Slaves diesen in ihr boot-Verzeichnis und starten neu.
+
+* stop = Beendet das master_listen.py Skript und ermöglicht den direkten Zugriff auf den Master-Pi
